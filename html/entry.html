@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/registro</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/login&registro.css">
+    <script src="/js/navbar.jsge"></script>
+
+</head>
+<body>
+    <head>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="app.html">
+                        <p id="logo">NEWSPAPER</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">FAQS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn-primary" href="entry.html"  >ENTRAR</a>
+                </li>
+            </ul>
+        </nav>
+    </head>
+
+
+        <div class="container" >
+            <a class="links" id="paracadastro"></a>
+            <a class="links" id="paralogin"></a>
+             
+            <div class="content">      
+              <!--FORMULÁRIO DE LOGIN-->
+              <div id="login">
+                <form method="post" action=""> 
+                  <h1>Login</h1> 
+                  <p> 
+                    <label for="nome_login">Nome</label>
+                    <input id="nome_login" name="nome_login" required="required" type="text" placeholder="nome"/>
+                  </p>
+                   
+                  <p> 
+                    <label for="email_login">password</label>
+                    <input id="email_login" name="email_login" required="required" type="password" placeholder="pass" /> 
+                  </p>
+                 
+                  <p>
+                    <a href="/html/initialpage.html">
+                      <input type="submit"  value="Logar" /> 
+                    </a> 
+                  </p>
+                   
+                  <p class="link">
+                    Ainda não tenho conta?
+                    <a href="#paracadastro">registro</a>
+                  </p>
+                </form>
+              </div>
+         
+              <!--FORMULÁRIO DE CADASTRO-->
+              <div id="registro">
+                <form method="post" action=""> 
+                  <h1>Registro</h1> 
+                   
+                  <p> 
+                    <label for="nome_registro">Nome</label>
+                    <input id="nome_registro" name="nome_registro" required="required" type="text" placeholder="nome" />
+                  </p>
+                   
+                  <p> 
+                    <label for="email_registro">e-mail</label>
+                    <input id="email_registro" name="email_registro" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+                  </p>
+                   
+                  <p> 
+                    <label for="pass_registro">pass</label>
+                    <input id="pass_registro" name="pass_registro" required="required" type="password" placeholder="password"/>
+                  </p>
+                   
+                  <p> 
+                    <label for="conf_pass">conf. pass</label>
+                    <input id="conf_pass" name="senha_cad" required="required" type="password" placeholder="password"/>
+                  </p>
+                   
+                  <p> 
+                    <a href="/html/initialpage.html">
+                      <input type="submit" value="registro"/> 
+                    </a>
+                  </p>
+                   
+                  <p class="link">  
+                    Já tenho conta?
+                    <a href="#paralogin">Login </a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>  
+    
+          <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer_1">
+                <ul>
+                    <li>esmad</li>
+                    <li>Campus 2 - P.Porto | ESMAD</li>
+                </ul>
+            </div>
+            <div class="footer-heading footer_2">
+                <ul>
+                    <li>contactos: </li>
+                    <li>telefone: 252 291 700</li>
+                    <li>email:geral@esmad.ipp.pt</li>
+    
+                </ul>
+            </div>
+            <div class="footer-heading footer_3">
+                <h1>about us</h1>
+            
+                <p>projeto de tecnologia web
+                    com o intuito de criar um 
+                    jornal online
+                </p>            
+            </div>
+            
+        </div>
+    </div>
+   
+</body>
+</html>

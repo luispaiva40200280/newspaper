@@ -1,0 +1,32 @@
+.container-noticia{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding-left: 250px;
+    padding-top: 25px;
+    
+    flex-wrap: wrap;
+}
+
+.container_media , img{
+    /* background-image: url('/media/03.jpg'); */
+    height: 500px; 
+    width: 700px;
+    background-size: cover;
+    order: 1;
+    border-radius: 5px;
+}
+
+.container-noticia h1{
+    font-size: 54px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container-noticia p{
+    max-width: 700px;
+    font: 1.6em sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem ;
+
+}
