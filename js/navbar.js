@@ -1,6 +1,7 @@
-const perfil_btn = document.querySelector('.btn-primary')
-const user_name = document.getElementById('nome_login').Value //login
-const name_regitro = document.getElementById('nome_registro').Value
 
 
+let nome_login = document.querySelector("form input[name=nome_login]").value;
+let btn_perfil = document.querySelector('.btn-primary')
+
+btn_perfil.innerHTML = `${nome_login}`
 

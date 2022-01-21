@@ -1,0 +1,106 @@
+/* The sidebar menu */
+.sidenav {
+    height: 30rem; /* Full-height: remove this if you want "auto" height */
+    width: 180px; /* Set the width of the sidebar */
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    background-color: rgb(113, 178, 204); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0.2rem ;
+    margin-top: 50px;
+    
+     
+}
+    
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 6px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #2c2c2c;
+    background-color: rgb(67, 135, 161);
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*  */
+
+.container-sidenav{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+  
+  
+.container-categorias{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card-categorias{
+    width: 250px ;
+    height:150px ;
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    grid-area: image;
+    border-radius: 8px;
+    margin: 10px ;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+}
+
+.card-categorias p{
+    color: rgb(0, 0, 0);
+    padding-top:25% ;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-desporto{
+    background-image: url('/media/desporto.jpg');
+    background-size: cover;
+}
+.card-economia{
+    background-image: url('/media/economia_2.jpg');
+    background-size: cover;
+}
+
+
+
+.card-politica{
+    background-image: url('/media/esquerda-e-direita-na-politica-og.jpg');
+    background-size: cover;
+
+}
+
+.card-covid {
+    background-image: url('/media/covid-19-virus.jpg');
+    background-size: cover;
+}
+.card-covid p{
+
+    color: blanchedalmond;
+}

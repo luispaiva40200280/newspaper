@@ -52,7 +52,7 @@ body{
 }
 
 .btn-primary:hover {
-  background: var(--clr-primary-hover);
+  background: rgb(104, 122, 120);
 }
 
 /*  */
@@ -65,14 +65,17 @@ body{
   flex-wrap: wrap;
 }
 
+/* card noticias*/
 .card{
-  background-color:rgb(150, 221, 218) ;
-  width: 230px;
+  background-color:rgb(255, 255, 255) ;
+  width: 250px;
+  height: 100%;
   padding: auto;
   margin: 10px;
   border-radius: 8px ;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  box-shadow: rgba(139, 139, 139, 0.61);
 }
 
 .card_image{
@@ -83,15 +86,18 @@ body{
   grid-area: image;
   background-size: cover;
   border-radius: 8px 8px 0px 0px ;
-  background-image: url("/media/03.jpg");
+}
+img{
+  width: 100%; 
+  height: 150px;
 }
 
 .card p{
   padding: 5px;
-}
+} 
 
 .card .btn {
-  background-color: rgb(111, 111, 192);
+  background-color: rgb(61, 61, 61);
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -100,9 +106,13 @@ body{
   border-radius: 8px  ;
 }
 
+.btn a{
+  color: white ;
+}
+
 .card:hover{
-  background-color: rgb(240, 240, 240);
-  color: rgb(0, 0, 0);
+  background-color: rgb(170, 170, 170);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transform: scale(1.01);
   transition: all 0.8s;
@@ -122,11 +132,13 @@ body{
   margin-left: 35px;
   margin-top: 50px;
 }
+
+
 *{
   padding: 0rem;
   margin: 0rem;
   box-sizing: border-box;
-}
+} */
 .footer-container{
   background-color: #89D3EA;
   padding-bottom: 1rem;
@@ -163,4 +175,11 @@ body{
   margin-left: 8rem;
   text-transform: uppercase;
 
+}
+
+
+hr {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid black;
 }

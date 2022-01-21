@@ -110,6 +110,7 @@ input[type="submit"]{
 /*estilo do botão submit no hover */
 input[type="submit"]:hover{
     background: #4ab3c6;
+    transition: all 0.5s linear;
 }
 
 .link{
@@ -174,7 +175,7 @@ input[type="submit"]:hover{
   animation-delay: .1s;
 }
  
-/* Efeito ao clicar no botão ( regitro) */
+/* Efeito ao clicar no botão ( ) */
 #registro:target ~ .content #login,
 #paralogin:target ~ .content #registro{
   -webkit-animation-name: fadeOutLeft;
