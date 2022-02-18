@@ -16,7 +16,7 @@
         <nav>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="app.html" id="logo">
+                    <a href="/html/pagina_logada.html" id="logo">
                         NEWSPAPER
                     </a>
                 </li>
@@ -26,7 +26,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="btn-primary" href="entry.html"  >ENTRAR</a>
+                    <a class="btn-primary" href="/html/perfil_utilizador.html">perfil</a>
                 </li>
             </ul>
         </nav>
@@ -49,37 +49,39 @@
         
         <!-- Page content -->
         <div class="container-noticias">
-            <form action="">
-                <div>
-                    <label for="img_file">Imagen</label>
-                    <input type="file" name="imagem" id="img_file" required>
-                </div>
-                <div>
-                    <label for="titlo_noticia">Titlo</label>
-                    <input type="text" name="title" id="titlo_noticia" required>
-                </div>
-                <div>
-                    <label for="categoria">categoria</label>
-                    <select name="categoria" id="categoria" autofocus required>
-                        <option value="desporto">desporto</option>
-                        <option value="economia">economia</option>
-                        <option value="politia">politia</option>
-                        <option value="tecnologia">tecnologia</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="discrição_noticia">descrição</label><br>
-                    <textarea name="descriçao" id="discrição_noticia" cols="30" rows="5" required></textarea>
-                </div>
-                <div>
-                    <label for="noticia">noticia</label><br>
-                    <textarea name="notica" id="notica" cols="50" rows="25" required></textarea>
-                </div>
-                <div>
-                    <button>adicionar noticias</button>
-                </div>
+            <div class="noticias">
+                <form action="">
+                    <div>
+                        <label for="img_file">Imagen</label>
+                        <input type="url" name="image" id="img_file" required>
+                    </div>
+                    <div>
+                        <label for="titlo_noticia">Titlo</label>
+                        <input type="text" name="title" id="titlo_noticia" required>
+                    </div>
+                    <div>
+                        <label for="categoria">categoria</label>
+                        <select name="categoria" id="categoria" autofocus required>
+                            <option value="desporto">desporto</option>
+                            <option value="economia">economia</option>
+                            <option value="politia">politia</option>
+                            <option value="tecnologia">tecnologia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="discrição_noticia">descrição</label><br>
+                        <textarea name="descriçao" id="discrição_noticia" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <label for="noticia">noticia</label><br>
+                        <textarea name="notica" id="notica" cols="50" rows="25" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" onclick="adicionar_noticia()" id="adiciona_noticia">adicionar noticias</button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
 
     </div>
